@@ -1,0 +1,85 @@
+body {
+    padding-top: 50px;
+}
+.navbar.nav-top {
+    border-width: 0 0 1px 0;
+    border-color: #5bc0de;
+}
+.navbar.nav-top .navbar-header a.navbar-brand {
+    color: #5bc0de;
+    background-image: url("../images/logo_50.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+.navbar.nav-top a {
+    color: #5bc0de;
+}
+.navbar-form .form-group {
+    margin-left: 10px;
+}
+.navbar-form button {
+    margin-left: 10px;
+}
+.jumbotron h2 {
+    font-weight: bold;
+}
+.jumbologo {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    padding-left: 195px;
+    background-position: left center;
+}
+.jumbologo span {
+    font-weight: normal;
+}
+/* Bootstrap template overrides*/
+.panel-default .panel-heading {
+    color: #5bc0de;
+}
+.btn-info {
+    background-image: -webkit-linear-gradient(#5bc0de, #5bc0de 60%, #4ab9db);
+    background-image: linear-gradient(#5bc0de, #5bc0de 60%, #4ab9db);
+    background-color: #5bc0de;
+    background-repeat: no-repeat;
+}
+.btn-default {
+    background-image: -webkit-linear-gradient(#5bc0de, #5bc0de 60%, #4ab9db);
+    background-image: linear-gradient(#5bc0de, #5bc0de 60%, #4ab9db);
+    background-color: #5bc0de;
+    background-repeat: no-repeat;
+}
+.btn-default:hover {
+    background-image: -webkit-linear-gradient(#20829f, #2596b8 40%, #28a4c9);
+    background-image: linear-gradient(#20829f, #2596b8 40%, #28a4c9);
+    background-repeat: no-repeat;
+}
+.row {
+    margin-top: 10px;
+}
+.tab-pane {
+    padding-top: 10px;
+}
+/*Toastr Styles*/
+.toast-top-right {
+    top: 70px;
+}
+@media all and (min-width: 768px) {
+    .toast-top-right {
+        left: 768px;
+    }
+}
+@media all and (min-width: 992px) {
+    .toast-top-right {
+        left: 892px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .toast-top-right {
+        left: 1000px;
+    }
+}
+@media all and (min-width: 1900px) {
+    .toast-top-right {
+        left: 1200px;
+    }
+}

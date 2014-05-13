@@ -1,0 +1,16 @@
+{
+  "name": "SamuraiSupport",
+  "version": "0.0.0",
+  "description": "Samurai Support Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Russell Durham",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~3.4.8",
+    "jade": "~1.3.1",
+    "q": "~1.0.1"
+  }
+}

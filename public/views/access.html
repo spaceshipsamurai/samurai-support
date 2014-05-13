@@ -1,0 +1,44 @@
+<form role="form">
+    <div class="form-group">
+        <label for="characterName">Character/Forum Name</label>
+        <input class="form-control" type="text" placeholder="Character Name..."
+               name="characterName" id="characterName" ng-model="characterName"/>
+    </div>
+    <div class="form-group">
+        <label for="serviceName">Service</label>
+        <select class="form-control" id="serviceName" ng-model="serviceName">
+            <option value="Forums">Forums</option>
+            <option value="Teamspeak">Teamspeak</option>
+            <option value="Jabber">Jabber</option>
+            <option value="Wiki">Wiki</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="summary">Summary</label>
+        <input class="form-control" type="text" placeholder="Short summary"
+               name="summary" id="summary" ng-model="summary"/>
+    </div>
+    <div class="form-group">
+        <label for="description">Problem</label>
+        <textarea class="form-control" id="description" ng-model="description" placeholder="Detailed description of the problem."/>
+    </div>
+
+    <p>
+        If your forum account has been disabled or you are having trouble registering please provide the information
+        below as well.
+    </p>
+
+    <div class="form-group">
+        <label for="keyId">API Key ID</label>
+        <input class="form-control" type="text" placeholder="API Key ID"
+               name="keyId" id="keyId" ng-model="keyId"/>
+    </div>
+    <div class="form-group">
+        <label for="vcode">API Verification Code</label>
+        <input class="form-control" type="text" placeholder="Verification Code"
+               name="vcode" id="vcode" ng-model="vcode"/>
+    </div>
+
+    <button class="btn btn-default pull-right" ng-click="submit()">Submit</button>
+
+</form>

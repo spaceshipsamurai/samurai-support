@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+head
+    meta(charset='UTF-8')
+    title Support - Spaceship Samurai
+    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootswatch/3.1.1/slate/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/site.css')
+body(ng-app='app')
+    .navbar.navbar-fixed-top.nav-top
+        .container
+            .navbar-header
+                a.navbar-brand(href='/') Spaceship Samurai
+    .container(style='margin-top: 40px;')
+        .row
+            .col-md-6.col-md-offset-3
+                .panel.panel-default
+                    .panel-heading
+                        h3.panel-title
+                            | Support Request
+                    .panel-body
+                        form#navController(role='form', ng-controller='ssNavCtrl', style='margin-bottom: 20px;')
+                            select#supportType.form-control(name='supportType', ng-model='currentForm', ng-change='nav(currentForm)')
+                                option(value='/access') Access Request
+                                option(value='/newCorp') New Corporation Request
+                        div(ng-view='ng-view')
+    include scripts
